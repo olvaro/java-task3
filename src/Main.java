@@ -75,6 +75,12 @@ public class Main {
             for (int i = 0; i < k10; i++){
                 System.out.print(mas10[i] + " ");
             }
+
+            System.out.println("");
+            System.out.println("Massiv ot 0 do 10:");
+            for (int i = 0; i < k0_10; i++){
+                System.out.print(mas0_10[i] + " ");
+            }
         }
         catch (FileNotFoundException e){
             System.out.println("File not found!");
