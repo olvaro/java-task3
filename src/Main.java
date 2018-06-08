@@ -42,6 +42,26 @@ public class Main {
                 }
             }
 
+            for (int i = k0 - 1; i > 0; i--){
+                for (int j = 0; j < i; j++){
+                    if (mas0[j] > mas0[j+1]){
+                        int tmp = mas0[j];
+                        mas0[j] = mas0[j+1];
+                        mas0[j+1] = tmp;
+                    }
+                }
+            }
+
+            for (int i = k10 - 1; i > 0; i--){
+                for (int j = 0; j < i; j++){
+                    if (mas10[j] < mas10[j+1]){
+                        int tmp = mas10[j];
+                        mas10[j] = mas10[j+1];
+                        mas10[j+1] = tmp;
+                    }
+                }
+            }
+
             System.out.println("");
             System.out.println("k0=" + k0 + "; k0_10=" + k0_10 + "; k10=" + k10);
             for (int i = 0; i < k0; i++){
